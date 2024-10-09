@@ -72,7 +72,7 @@ npx cypress run
 
 Test results can be viewed in the "Actions" tab of your GitHub repository.
 
-## 🎅 Authors
+## 👨 Authors
 
 Vitalijus: [Github](https://github.com/vitaliju)
 
