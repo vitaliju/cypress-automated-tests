@@ -1,0 +1,15 @@
+{
+    "name": "Vitalijus",
+    "email": "vitalijus@kyou.com",
+    "password": "123456zzz",
+    "first_name": "Vitalijus",
+    "last_name": "Drago",
+    "company": "Test",
+    "address1": "Kauno g.",
+    "address2": "Kanto g.",
+    "country": "Canada",
+    "state": "Some",
+    "city": "Some",
+    "zipcode": "988799",
+    "mobile_number": "789654"
+}
