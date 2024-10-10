@@ -10,5 +10,12 @@ describe('Product quantity in Cart is correct', () => {
         cy.url().should('eq', 'https://www.automationexercise.com/product_details/2');
         cy.get('.product-details').should('be.visible');
 
+        // Increase quantity to 4 and add to cart
+        cy.get('input#quantity').clear().type(quantity);
+        cy.contains('button', 'Add to cart').click();
+
+        // Verify that product is displayed in cart page with exact quantity
+        cy.contains('View Cart').click();
+        cy.get('.cart_quantity').should('contain.text', quantity);
     });
 });
