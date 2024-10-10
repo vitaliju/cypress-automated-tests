@@ -10,6 +10,11 @@ describe('Remove product from the cart', () => {
         cy.get('.btn.btn-success.close-modal').should('be.visible').click();
         cy.get('a[href="/view_cart"]').first().should('contain.text', 'Cart').click();
 
+        // Verify that cart page is displayed
+        cy.url().should('eq', 'https://www.automationexercise.com/view_cart');
 
+        // Remove product from the cart and verify that product is removed
+        cy.get(`a[data-product-id="${productId}"]`).click();
+        cy.get('#empty_cart').should('contain', 'Cart is empty!');
     });
 });
